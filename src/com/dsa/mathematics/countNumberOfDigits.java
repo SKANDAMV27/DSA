@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class countNumberOfDigits {
 
     static long countDigits(long n){
+
+        if(n==0){
+            return 1; //if n==0 then writer 1
+        }
+        n = Math.abs(n); // this is for negative value
         long count = 0;
 
         while(n>0){
